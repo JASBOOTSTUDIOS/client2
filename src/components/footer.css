@@ -1,0 +1,10 @@
+.main-footer{
+    height: 15vh;
+    background: black;
+    border-radius: 5px;
+    color: azure;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 33px);
+}
+
