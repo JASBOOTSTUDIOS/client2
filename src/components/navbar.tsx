@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <nav className="navbars">
       <div className="nav-containers">
-        <a href="#" className="logo">Mi Sitio</a>
+        <a href="#" className="logo">Música Studios</a>
 
         {/* Botón menú */}
         <button className="menu-btn" onClick={() => setIsOpen(!isOpen)}>
