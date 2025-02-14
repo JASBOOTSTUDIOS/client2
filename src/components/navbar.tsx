@@ -2,6 +2,12 @@
 
 import { useState } from "react";
 import "./styleNavbar.css"; // Archivo de estilos
+import Link from "next/link";
+let image = {
+  url: "/ja.png",
+  alt: "."
+
+} 
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +15,10 @@ export default function Navbar() {
   return (
     <nav className="navbars">
       <div className="nav-containers">
-        <a href="#" className="logo">Mi Sitio</a>
+        <Link href="#" target="_BLANK" className="logo">
+          <img className="img-logo" src={image.url} alt={image.alt} height={30} width={30} />
+          Music Studio
+          </Link>
 
         {/* Botón menú */}
         <button className="menu-btn" onClick={() => setIsOpen(!isOpen)}>
