@@ -1,16 +1,18 @@
-import "./mainContent.css"
+import "./mainContent.css";
 export default function MainContent(){
+    let sculpture = {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4HCdGBg42LZfHLETIYKNHEidoeW3KuHZp4Q&s",alt:"Mi Imagen"}
 return (<>
 <div className="mainContainer">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>7</div>
-    <div>8</div>
-    <div>9</div>
+        <img src={sculpture.url} alt={sculpture.alt}/>      
+        <img src={sculpture.url} alt={sculpture.alt}/>
+        <img src={sculpture.url} alt={sculpture.alt}/>
+        <img src={sculpture.url} alt={sculpture.alt}/>
+        <img src={sculpture.url} alt={sculpture.alt}/>
+        <img src={sculpture.url} alt={sculpture.alt}/>
+        <img src={sculpture.url} alt={sculpture.alt}/>
+        <img src={sculpture.url} alt={sculpture.alt}/>
+        <img src={sculpture.url} alt={sculpture.alt}/>
+    
 </div>
 </>)
 }
