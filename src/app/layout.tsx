@@ -1,8 +1,4 @@
 import type { Metadata } from "next";
-import { useEffect } from "react";
-// import { Geist, Geist_Mono } from "next/font/google";
-import "bootstrap/dist/css/bootstrap.min.css";
-
 
 export const metadata: Metadata = {
   title: "Music Studio",
