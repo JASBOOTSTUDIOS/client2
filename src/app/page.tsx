@@ -1,9 +1,11 @@
-// import styles from "./page.module.css";
-
+import Navbar from "@/components/navbar";
 export default function Home() {
   return (
-    <div className="container">
-      <h1>Jefry Astacio</h1>
+    <div className="">
+      <Navbar />
+      <div className="container-fluid">
+        <h1>Jefry Astacio</h1>
+      </div>
     </div>
   );
 }

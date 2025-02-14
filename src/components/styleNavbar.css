@@ -1,0 +1,73 @@
+/* Estilos generales */
+.navbars {
+    background-color: #333;
+    margin: 0%;
+    position: relative;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .nav-containers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .menu-btn {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+    position: relative;
+  }
+  
+  /* Estilos del menú */
+  .nav-linkss {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-linkss li {
+    margin: 0 15px;
+  }
+  
+  .nav-linkss a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Responsive: Mostrar botón en móviles */
+  @media (max-width: 768px) {
+    .menu-btn {
+      display: block;
+    }
+  
+    .nav-linkss {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      background: #333;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav-linkss.open {
+      display: flex;
+    }
+  
+    .nav-linkss li {
+      padding: 10px 0;
+    }
+  }
+  
