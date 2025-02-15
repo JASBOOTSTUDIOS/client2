@@ -1,32 +1,17 @@
 "use client"
 import "./footer.css";
 
-
-import { useEffect, useState } from "react";
-
 export default function Footer() {
-//   const [data, setData] = useState(null);
 
-//   useEffect(() => {
-//     fetch("https://server2-o3im.onrender.com/") // Reemplaza con la URL de tu API
-//       .then((res) => res.json())
-//       .then((data) => setData(data))
-//       .catch((error) => console.error("Error al obtener los datos:", error));
-//   }, []);
-
-//   if (!data) return <p>Cargando...</p>;
-
-//   return <pre>{JSON.stringify(data, null, 2)}</pre>;
-return <h1>Footer</h1>
+return (
+    <div className="main-footer">
+        <div className="main-footer-sidevar">
+            <ul>
+                <li>
+                    Editar
+                </li>
+            </ul>
+        </div>
+    </div>
+);
 }
-
-
-// export default function Footer(){
-//     return (
-//         <>
-//         <div className="main-footer">
-//             <h3 className="txt-main">Este es el footer</h3>
-//         </div>
-//         </>
-//     )
-// }
