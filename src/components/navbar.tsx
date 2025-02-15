@@ -1,7 +1,14 @@
 "use client"; // Necesario en Next.js
 
 import { useState } from "react";
-import "./styleNavbar.css"; // Archivo de estilos
+import "./navbar.css"; // Archivo de estilos
+import Link from "next/link";
+import Image from "next/image";
+let image = {
+  url: "/ja.png",
+  alt: "."
+
+} 
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +16,14 @@ export default function Navbar() {
   return (
     <nav className="navbars">
       <div className="nav-containers">
+
+        <Link href="#" className="logo">
+          <Image className="img-logo" src={image.url} alt={image.alt} height={30} width={30} />
+          Music Studio
+          </Link>
+
         <a href="#" className="logo">Música Studios</a>
+
 
         {/* Botón menú */}
         <button className="menu-btn" onClick={() => setIsOpen(!isOpen)}>
@@ -22,6 +36,15 @@ export default function Navbar() {
           <li><a href="#">Servicios</a></li>
           <li><a href="#">Contacto</a></li>
         </ul>
+        <div className="menu">
+    <button className="menu-button">Menú</button>
+    <div className="menu-content">
+        <a href="#">Opción 1</a>
+        <a href="#">Opción 2</a>
+        <a href="#">Opción 3</a>
+    </div>
+</div>
+
       </div>
     </nav>
   );
