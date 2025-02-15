@@ -2,3 +2,14 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --gb-bg-ligth: linear-gradient(#e7eaef, #9fd0f3,#e9edff );
+    --sidebar-bg-ligth:rgba(159, 155, 201, 0.237);
+    --footer-bg-ligth:rgba(161, 157, 200, 0.29);
+    --gb-bg-dark: linear-gradient(#3a3f48, #043253,#070e2f );
+    --sidebar-bg-dark:rgba(23, 12, 120, 0.29);
+    --footer-bg-dark:rgba(23, 12, 120, 0.29);
+}
+body{
+    background: var(--gb-bg-dark) ;
+}
