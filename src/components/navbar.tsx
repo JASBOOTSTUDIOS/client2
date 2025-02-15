@@ -14,11 +14,12 @@ export default function Navbar() {
 
   return (
     <nav className="navbars">
-      <div className="nav-containers">
-        <Link href="#" className="logo">
+      <div className="nav-containers"
+          <Link href="#" className="logo">
           <img className="img-logo" src={image.url} alt={image.alt} height={30} width={30} />
           Music Studio
           </Link>
+        <a href="#" className="logo">Música Studios</a>
 
         {/* Botón menú */}
         <button className="menu-btn" onClick={() => setIsOpen(!isOpen)}>
