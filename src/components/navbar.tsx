@@ -3,6 +3,7 @@
 import { useState } from "react";
 import "./navbar.css"; // Archivo de estilos
 import Link from "next/link";
+import Image from "next/image";
 let image = {
   url: "/ja.png",
   alt: "."
@@ -16,7 +17,7 @@ export default function Navbar() {
     <nav className="navbars">
       <div className="nav-containers">
         <Link href="#" className="logo">
-          <img className="img-logo" src={image.url} alt={image.alt} height={30} width={30} />
+          <Image className="img-logo" src={image.url} alt={image.alt} height={30} width={30} />
           Music Studio
           </Link>
 
